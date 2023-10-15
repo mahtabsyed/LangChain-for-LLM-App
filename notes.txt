@@ -1,0 +1,15 @@
+# Go to folder "LangChain for LLM App" and create virtual env in it
+$ cd "LangChain for LLM App"
+
+$ /usr/local/bin/python3 -m venv .venv
+$ source .venv/bin/activate
+$ pip install -r requirements.txt
+
+# Check if package installed
+$pip show openai
+
+# Create an environment variable which point to OpenAPI key
+export OPENAI_API_KEY="YOUR_OPENAPI_KEY"
+
+# Check if key is loaded in environment
+printenv OPENAI_API_KEY
